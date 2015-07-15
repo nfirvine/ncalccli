@@ -14,7 +14,7 @@ namespace NCalc.Cli
             string unparsed;
             try {
                 unparsed = args[1];
-            } catch (IndexOutOfRangeException e) {
+            } catch (IndexOutOfRangeException) {
                 return Usage();
             }
             switch (args[0]) {
